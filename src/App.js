@@ -3,6 +3,10 @@ import AdminHome from "./Comps/AdminHome";
 import NameForm from "./Comps/NameForm";
 import DetailsForm from "./Comps/DetailsForm";
 import LastForm from "./Comps/LastForm";
+
+import { AddMember } from "./Comps/AddMember";
+import FamilyDetails from "./Comps/FamilyDetails";
+import { AddMemberLastForm } from "./Comps/AddMemberLastForm";
 import "./Comps/styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,6 +22,10 @@ function App() {
             <Route path="/admin/addUser" element={<NameForm />} />
             <Route path="/admin/addUser/details" element={<DetailsForm />} />
             <Route path="/admin/addUser/credentials" element={<LastForm />} />
+
+            <Route path="/admin/addFam" element={<AddMember />} />
+            <Route path="/admin/addFam/details" element={<FamilyDetails />} />
+            <Route path="/admin/addFam/last" element={<AddMemberLastForm />} />
           </Routes>
         </main>
       </BrowserRouter>

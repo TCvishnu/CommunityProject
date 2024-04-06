@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import "./styles.css";
 import AddUser from "./icons/addUser";
@@ -33,8 +33,8 @@ export default function AdminHome() {
                 <Link to="/admin/addUser" className='admin-page-btn w-5/12 h-10 font-semibold text-white rounded-md
                 flex flex-row items-center justify-center gap-2 duration-200 shrink-0'> <AddUser styling=""/> Add User</Link>
 
-                <button className='admin-page-btn w-5/12 h-10 font-semibold text-white rounded-md
-                flex flex-row items-center justify-center gap-2 duration-200 shrink-0'> Add Family Details</button>
+                <Link to="/admin/addFam"className='admin-page-btn w-5/12 h-10 font-semibold text-white rounded-md
+                flex flex-row items-center justify-center gap-2 duration-200 shrink-0'> Add Family Details</Link>
 
                 <button className='admin-page-btn w-5/12 h-10 font-semibold text-white rounded-md
                 flex flex-row items-center justify-center gap-2 duration-200 shrink-0'></button>

@@ -13,10 +13,10 @@ export default function LastForm() {
     }
   return (
     <div className='w-screen h-screen flex items-center justify-center bg-admin-page-header'>
-        <form className='w-7/12 rounded-md sm:w-3/12 form-shadow bg-white flex flex-col items-center justify-start gap-8
+        <form className='w-7/12 rounded-sm sm:w-3/12 form-shadow bg-white flex flex-col items-center justify-start gap-8
         overflow-y-auto py-8 max-h-screen'
         onSubmit={handleSubmit}>
-            <h1 className='text-md font-semibold'>Set Username & Password</h1>
+            <h1 className='text-lg font-semibold'>Set Username & Password</h1>
             <div className='w-full flex flex-col justify-center items-center gap-2'>
                 <input placeholder='Username'
                     // required

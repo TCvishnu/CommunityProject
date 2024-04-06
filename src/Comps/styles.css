@@ -66,3 +66,15 @@
 .bg-darker-blue{
     background-color: #23395B;
 }
+
+.bg-color-addmember {
+    background-color: #F9E8C9;
+}
+
+.bg-color-addmember-btn {
+    background-color: #23395B;
+}
+
+.form-box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

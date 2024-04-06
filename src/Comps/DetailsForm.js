@@ -41,7 +41,7 @@ const RemainingDetails = () => {
 
     return (
         <div className=' w-screen h-screen flex justify-center items-center bg-admin-page-header'>
-            <div className=" w-8/12 rounded-md h-auto lg:w-3/12 sm:w-5/12 form-shadow bg-white
+            <div className=" w-8/12 rounded-sm h-auto lg:w-3/12 sm:w-5/12 form-shadow bg-white
         flex flex-col items-center gap-4">
             <form className=" w-full h-full flex flex-col items-center gap-4" onSubmit={handleProceed}>
             <h1 className='text-lg mt-8 font-semibold sm:text-2xl'>Details</h1>
