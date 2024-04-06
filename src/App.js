@@ -7,6 +7,7 @@ import LastForm from "./Comps/LastForm";
 import { AddMember } from "./Comps/AddMember";
 import FamilyDetails from "./Comps/FamilyDetails";
 import { AddMemberLastForm } from "./Comps/AddMemberLastForm";
+import SuperAdminHome from "./Comps/SuperAdminHome";
 import "./Comps/styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/admin/addFam" element={<AddMember />} />
             <Route path="/admin/addFam/details" element={<FamilyDetails />} />
             <Route path="/admin/addFam/last" element={<AddMemberLastForm />} />
+            <Route path="/superAdmin" element={<SuperAdminHome />} />
           </Routes>
         </main>
       </BrowserRouter>

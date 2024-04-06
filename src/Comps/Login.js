@@ -3,6 +3,7 @@ import ClosedEye from './icons/closeEye';
 import Eye from './icons/eye';
 import AdminLogin from './AdminLogin';
 import "./styles.css"
+import SuperAdminLogin from './SuperAdminLogin';
 
 export default function Login() {
 
@@ -52,12 +53,17 @@ export default function Login() {
                 className='w-10/12 bg-login-blue h-10 rounded-lg text-white'/>
             </form>
             <hr className='w-1/3 bg-stone-200'></hr>
-
+            
+            <div className='w-full flex flex-col items-center gap-2'>
             <button className='w-10/12 text-sm bg-darker-blue text-white h-10 rounded-lg shrink-0'
             onClick={()=>{setCurPage("adminLogin")}}> Login as branch admin </button> 
+            <button className='w-10/12 text-sm bg-darker-blue text-white h-10 rounded-lg shrink-0'
+            onClick={()=>{setCurPage("superAdminLogin")}}> Login as super admin </button> 
+            </div>
 
         </div>}
         {curPage === "adminLogin" && <AdminLogin />}
+        {curPage === "superAdminLogin" && <SuperAdminLogin />}
     </div>
         
   )
